@@ -7,7 +7,7 @@
  * Return: return string length.
  */
 
-void find_int(int num, int *len)
+void find_int(long int num, int *len)
 {
 	if (num < 0)
 	{
@@ -30,7 +30,7 @@ void find_int(int num, int *len)
 int print_int(va_list ap)
 {
 	int len = 0;
-	int num = va_arg(ap, int);
+	long int num = (long int)va_arg(ap, int);
 
 	find_int(num, &len);
 	return (len);

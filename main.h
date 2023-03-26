@@ -24,6 +24,6 @@ int print_char(va_list ap);
 int print_pcnt(va_list ap);
 int print_str(va_list ap);
 int print_int(va_list ap);
-void find_int(int num, int *len);
+void find_int(long int num, int *len);
 
 #endif /*_MAIN_H_*/
