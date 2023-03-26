@@ -13,10 +13,10 @@ int print_str(va_list ap)
 
 	if (str == NULL)
 	{
-		str = "(nil)";
+		str = "(null)";
 		for (i = 0; str[i]; i++)
 			_putchar(str[i]);
-		return (5);
+		return (6);
 	}
 
 	for (i = 0; str[i]; i++)
