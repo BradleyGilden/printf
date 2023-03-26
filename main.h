@@ -18,7 +18,6 @@ typedef struct menu
 	int (*func)(va_list ap);
 } menu_t;
 
-int validation(const char *format);
 int _printf(const char *format, ...);
 int _putchar(char c);
 int print_char(va_list ap);
