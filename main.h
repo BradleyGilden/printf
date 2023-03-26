@@ -6,13 +6,14 @@
 #include <unistd.h>
 
 /**
- * struct spec_printer - Represents a function that prints an argument
- * \ based on a determined format
+ * struct menu - Represents a function that prints an argument
+ *based on a determined format
  * @spec: The conversion specifier
- * @print_arg: The pointer to the printing function
+ * @func: The pointer to the printing function
  */
 
-typedef struct menu{
+typedef struct menu
+{
 	char spec;
 	int (*func)(va_list ap);
 } menu_t;
