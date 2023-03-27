@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *print_char - prints characters of integer.
+ *print_char - a function that prints characters of integer.
  *@ap: argument pointer.
  *Return: 1 on success.
  */
