@@ -29,5 +29,10 @@ void find_int(long int num, int *len);
 
 /*advanced specifiers*/
 int print_bin(va_list ap);
+int print_uint(va_list ap);
+void find_uint(unsigned int num, int *len);
+int print_HEX(va_list ap);
+int print_hex(va_list ap);
+int print_oct(va_list ap);
 
 #endif /*_MAIN_H_*/

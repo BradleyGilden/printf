@@ -15,7 +15,9 @@ int _printf(const char *format, ...)
 	menu_t m[] = {
 		{'%', print_pcnt}, {'c', print_char},
 		{'s', print_str}, {'d', print_int},
-		{'i', print_int}, {'b', print_bin}
+		{'i', print_int}, {'b', print_bin},
+		{'u', print_uint}, {'x', print_hex},
+		{'X', print_HEX}, {'o', print_oct}
 	};
 
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
@@ -25,7 +27,7 @@ int _printf(const char *format, ...)
 Start:
 	while (format[i])
 	{
-		for (j = 0; j < 6; j++)
+		for (j = 0; j < 10; j++)
 		{
 			if (format[i] == '%' && format[i + 1] == m[j].spec)
 			{
