@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_bin - prints unsigned int input as binary
+ * print_bin - a function that prints unsigned int input as binary
  *
  * @ap: pointer to input argument
  * Return: length of binary
