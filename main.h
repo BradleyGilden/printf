@@ -18,6 +18,7 @@ typedef struct menu
 	int (*func)(va_list ap);
 } menu_t;
 
+/*mandatory specifiers*/
 int _printf(const char *format, ...);
 int _putchar(char c);
 int print_char(va_list ap);
@@ -25,5 +26,8 @@ int print_pcnt(va_list ap);
 int print_str(va_list ap);
 int print_int(va_list ap);
 void find_int(long int num, int *len);
+
+/*advanced specifiers*/
+int print_bin(va_list ap);
 
 #endif /*_MAIN_H_*/
