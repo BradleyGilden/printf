@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * find_int - function that finds string lenght of interger.
+ * find_int - a function that finds string lenght of interger.
  * @num: number to be printed.
  * @len: lenght of a string.
  * Return: return string length.
@@ -22,7 +22,7 @@ void find_int(long int num, int *len)
 }
 
 /**
- * print_int - function that prints argument pointers.
+ * print_int - a function that prints argument pointers.
  * @ap: argument pointer.
  * Return: return string length.
  */
