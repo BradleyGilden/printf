@@ -17,7 +17,9 @@ int _printf(const char *format, ...)
 		{'s', print_str}, {'d', print_int},
 		{'i', print_int}, {'b', print_bin},
 		{'u', print_uint}, {'x', print_hex},
-		{'X', print_HEX}, {'o', print_oct}
+		{'X', print_HEX}, {'o', print_oct},
+		{'p', print_addr}, {'r', print_rev},
+		{'R', print_ROT13}, {'S', print_hidden}
 	};
 
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
@@ -27,7 +29,7 @@ int _printf(const char *format, ...)
 Start:
 	while (format[i])
 	{
-		for (j = 0; j < 10; j++)
+		for (j = 0; j < 14; j++)
 		{
 			if (format[i] == '%' && format[i + 1] == m[j].spec)
 			{

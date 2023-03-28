@@ -34,5 +34,11 @@ void find_uint(unsigned int num, int *len);
 int print_HEX(va_list ap);
 int print_hex(va_list ap);
 int print_oct(va_list ap);
+int print_addr(va_list ap);
+int find_hex(unsigned long int input);
+int print_rev(va_list ap);
+int print_ROT13(va_list ap);
+int print_hidden(va_list ap);
+int find_HEX(unsigned int input);
 
 #endif /*_MAIN_H_*/
