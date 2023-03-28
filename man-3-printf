@@ -1,0 +1,40 @@
+.TH printf 3 2023-03-28 GNU
+
+.SH NAME
+_printf \- printf function
+
+.SH SYNOPSIS 
+.B printf 
+[\fB\-h\fR]
+[\fB\-?\fR]
+[\fB\-\-help\fR]
+[\fB\-v\fR]
+[\fB\-\-version\fR]
+
+.SH PROTOTYPE
+int printf(const char *format, ...)
+
+.SH DESCRIPTION 
+.B _printf 
+.RB "Print ARGUMENT(s) according to FORMAT, or execute according to OPTION:"
+
+ FORMAT controls the output as in C printf. Interpreted sequences are:
+
+    \n	        new line
+    %%	     prints a single %
+    %d	     prints interger values.
+    %s	     prints a string of characters.
+    %c	     prints a single character.
+    %p	     prints an address to pointer.
+    %b	     prints argument provided in binary format.
+    %x	     prints argument provided in hex format lowercase.
+    %X	     prints argument provided in hex format uppercase.
+    %u	     prints argument provided in unsigned interger format.
+    %i	     prints argument provided in interger format.
+    %o	     prints argument provided in octal format.
+    %S	     prints out string literals but also shows hidden character output as "\\x"%02X	 
+
+
+.SH AUTHORS 
+Authors
+Code written by Bradley Gilden and Lebohang KevCare Mokobane
