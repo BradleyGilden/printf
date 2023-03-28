@@ -47,7 +47,7 @@ int print_HEX(va_list ap)
 }
 
 /**
- * print_hex - prints in capital hexidecimal format
+ * print_hex - prints in lowercase hexidecimal format
  * @ap: pointer to argument list
  *
  * Return: hexidecimal length
