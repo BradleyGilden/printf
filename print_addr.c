@@ -55,15 +55,15 @@ int find_hex(unsigned long int input)
 int print_addr(va_list ap)
 {
 	void *ptr;
-	char *s = "(null)";
-	unsigned long int addr;
+	char placeholder[] = "(null)";
+	long int addr;
 	int len = 0, i = 0;
 
-	ptr = va_arg(ap, void  *);
+	ptr = va_arg(ap, void *);
 	if (ptr == NULL)
 	{
-		for (i = 0; s[i] != '\0'; i++)
-			_putchar(s[i]);
+		for (i = 0; placeholder[i]; i++)
+			_putchar(placeholder[i]);
 		return (i);
 	}
 
